@@ -3,7 +3,6 @@ if __name__ == "__main__":
     f = open("data4.txt")
     count = 0
     for l in f:
-        jobs = []
         line = l.strip()
         p1 = line[:line.find(",")]
         p2 = line[line.find(",") + 1:]

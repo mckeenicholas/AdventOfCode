@@ -3,7 +3,6 @@ if __name__ == "__main__":
     f = open("data4.txt")
     count = 0
     for l in f:
-        jobs = []
         line = l.strip()
         p1 = line[:line.find(",")]
         p2 = line[line.find(",") + 1:]
@@ -12,5 +11,5 @@ if __name__ == "__main__":
         s1 = int(p2[:p2.find("-")])
         s2 = int(p2[p2.find("-") + 1:])
         if (f1 <= s1 and f2 >= s2) or (s1 <= f1 and s2 >= f2):
-            count +=1
+            count += 1
     print(count)
