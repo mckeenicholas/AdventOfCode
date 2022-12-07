@@ -65,8 +65,12 @@ if __name__ == "__main__":
                     curr.dir.append(int(line[:line.find(" ")]))
                 line = f.readline()
     print(files)
-    print("newline")
+
+
+    # Part 1
     print(files.find_size_under())
+
+    # Part 2
     print(30000000-(70000000-files.size()))
     directories = files.get_all_directories()
     min = files.size()
