@@ -50,10 +50,6 @@ f = open("data13.txt")
 total = 0
 pairs = [parse(packet) for packet in f.read().split("\n\n")]
 for x, pair in enumerate(pairs):
-    if x == 15:
-        print(pair[0])
-        print(pair[1])
     if compare(pair[0], pair[1]):
-        print(x + 1)
         total += x + 1
-print("\n" + str(total))
+print(total)
